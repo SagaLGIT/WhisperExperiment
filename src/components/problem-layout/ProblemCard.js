@@ -103,6 +103,8 @@ class ProblemCard extends React.Component {
                 text: "The answer is " + this.step.stepAnswer,
                 type: "bottomOut",
                 dependencies: Array.from(Array(this.hints.length).keys()),
+                math: this.step.answerLatex ? [this.step.answerLatex ]: [],
+                pacedSpeech: this.step.pacedSpeech? this.step.pacedSpeech : null
             });
             // Bottom out sub hints
             this.hints.map((hint, i) => {
