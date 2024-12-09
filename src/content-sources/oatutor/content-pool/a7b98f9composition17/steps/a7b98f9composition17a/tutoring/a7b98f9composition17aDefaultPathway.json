@@ -26,16 +26,16 @@
             "a7b98f9composition17a-h1"
         ],
         "title": "Combining Like Terms",
-        "text": "There are no like terms to combine, so the final answer $$is3 x^2+x+5$$.",
+        "text": "There are no like terms to combine, so the final answer $$3 x^2+x+5$$.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "There are no like terms to combine, so the final answer  i s 3 x squared plus x plus 5 .",
+        "speech": "There are no like terms to combine, so the final answer is 3 x squared plus x plus 5 .",
         "math": [
-            "$$is3 x^2+x+5$$"
+            "$$3 x^2+x+5$$"
         ],
         "pacedSpeech": [
-            "There are no like terms to combine, so the final answer   i s 3 x squared plus x plus 5"
+            "There are no like terms to combine, so the final answer is 3 x squared plus x plus 5"
         ]
     }
 ]

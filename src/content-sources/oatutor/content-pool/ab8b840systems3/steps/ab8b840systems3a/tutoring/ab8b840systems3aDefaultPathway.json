@@ -150,12 +150,12 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Check the solution by substituting  times, parentheses 8 comma 3,   into both equations.",
+        "speech": "Check the solution by substituting parentheses 8 comma 3,   into both equations.",
         "math": [
             "$$(8,3)$$"
         ],
         "pacedSpeech": [
-            "Check the solution by substituting   times,  8 comma 3,  ",
+            "Check the solution by substituting  8 comma 3,  ",
             " into both equations."
         ]
     },

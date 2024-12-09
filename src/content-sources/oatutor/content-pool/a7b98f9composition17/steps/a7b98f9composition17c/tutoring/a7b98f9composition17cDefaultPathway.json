@@ -4,17 +4,21 @@
         "type": "hint",
         "dependencies": [],
         "title": "Multiplication",
-        "text": "Remember that fg is the same as (fg)(x). All we have to do is use foil to multiply the two functions.",
+        "text": "Remember that $$fg$$ is the same as $$(fg)(x)$$. All we have to do is use foil to multiply the two functions.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Remember that fg is the same as (fg)(x). All we have to do is use foil to multiply the two functions.",
+        "speech": "Remember that f times g is the same as f times g of x. All we have to do is use foil to multiply the two functions.",
         "math": [
-            ""
+            "$$fg$$",
+            "$$(fg)(x)$$"
         ],
         "pacedSpeech": [
-            "Remember that fg is the same as (fg)(x). All we have to do is use foil to multiply the two functions."
+            "Remember that f times g" ,
+            "is the same as f times g of x",
+            " All we have to do is use foil to multiply the two functions."
         ]
+
     },
     {
         "id": "a7b98f9composition17c-h2",

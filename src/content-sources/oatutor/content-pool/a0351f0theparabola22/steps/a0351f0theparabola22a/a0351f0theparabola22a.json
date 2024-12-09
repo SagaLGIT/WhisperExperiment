@@ -9,6 +9,9 @@
     "answerType": "string",
     "variabilization": {},
     "answerLatex": "$$(-4,-4),(-4,0),x=8$$",
+    "pacedSpeech": [
+        "The answer is negative 4 comma negative 4,  ;,  negative 4 comma 0, ; x is equal to, 8"
+    ],
     "choices": [
         "$$(-4,-4),(-4,0),x=8$$",
         "$$(-4,-2),(-4,0),x=4$$"

@@ -8,5 +8,8 @@
     "stepBody": "",
     "answerType": "arithmetic",
     "variabilization": {},
-    "answerLatex": "$$300$$"
+    "answerLatex": "$$300$$",
+    "pacedSpeech": [
+        "The answer is 300"
+    ]
 }

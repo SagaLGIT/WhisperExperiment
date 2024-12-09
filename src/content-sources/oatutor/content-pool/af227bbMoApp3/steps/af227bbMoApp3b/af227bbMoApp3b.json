@@ -8,5 +8,8 @@
     "stepBody": "",
     "answerType": "arithmetic",
     "variabilization": {},
-    "answerLatex": "$$B=0.04x+40$$"
+    "answerLatex": "$$B=0.04x+40$$",
+    "pacedSpeech": [
+        "The answer is B equals 0.04 x plus 40"
+    ]
 }

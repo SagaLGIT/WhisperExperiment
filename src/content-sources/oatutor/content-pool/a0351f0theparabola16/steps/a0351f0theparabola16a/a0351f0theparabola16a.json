@@ -9,6 +9,9 @@
     "answerType": "string",
     "variabilization": {},
     "answerLatex": "$$(0,0),(9,0),x=-9$$",
+    "pacedSpeech": [
+        "The answer is  0 comma 0,  ;,  9 comma 0, ; x is equal to, negative 9"
+    ],
     "choices": [
         "$$(0,0),(9,0),x=-9$$",
         "$$(1,0),(9,0),x=-9$$",

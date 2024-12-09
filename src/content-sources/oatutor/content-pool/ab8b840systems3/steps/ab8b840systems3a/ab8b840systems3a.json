@@ -9,6 +9,9 @@
     "answerType": "string",
     "variabilization": {},
     "answerLatex": "$$(8,3)$$",
+    "pacedSpeech": [
+        "The answer is parentheses, 8, comma, 3"
+    ],
     "choices": [
         "$$(3,8)$$",
         "$$(4,6)$$",

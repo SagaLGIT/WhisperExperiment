@@ -9,6 +9,9 @@
     "answerType": "string",
     "variabilization": {},
     "answerLatex": "$$\\left(x+3\\right) \\left(2x+3\\right)$$",
+    "pacedSpeech": [
+        "The answer is parentheses x plus 3, times, parentheses, 2 x plus 3"
+    ],
     "choices": [
         "$$\\left(x+3\\right) \\left(2x+3\\right)$$",
         "$$\\left(x-3\\right) \\left(2x+3\\right)$$",

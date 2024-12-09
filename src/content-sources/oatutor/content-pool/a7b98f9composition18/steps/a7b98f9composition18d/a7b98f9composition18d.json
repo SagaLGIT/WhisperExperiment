@@ -8,5 +8,8 @@
     "stepBody": "",
     "answerType": "arithmetic",
     "variabilization": {},
-    "answerLatex": "$$\\frac{x+2}{6}$$"
+    "answerLatex": "$$\\frac{x+2}{6}$$",
+    "pacedSpeech": [
+        "The answer is fraction, x plus 2, over 6"
+    ]
 }

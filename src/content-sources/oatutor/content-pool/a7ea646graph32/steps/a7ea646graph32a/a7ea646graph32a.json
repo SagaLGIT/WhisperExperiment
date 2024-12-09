@@ -9,6 +9,9 @@
     "answerType": "string",
     "variabilization": {},
     "answerLatex": "$$(4,0),(-1,0),(6,0)$$",
+    "pacedSpeech": [
+        "The answer is  4 comma 0,  ;,  negative 1 comma 0, ;  6 comma 0"
+    ],
     "choices": [
         "$$(4,0),(-1,0),(-6,0)$$",
         "$$(4,0),(-1,0),(6,0)$$",

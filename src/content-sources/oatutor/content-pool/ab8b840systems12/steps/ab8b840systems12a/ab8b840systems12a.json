@@ -9,6 +9,9 @@
     "answerType": "string",
     "variabilization": {},
     "answerLatex": "$$(-1,2)$$",
+    "pacedSpeech": [
+        "The answer is parentheses, negative 1, comma, 2"
+    ],
     "choices": [
         "$$(-1,2)$$",
         "$$(2,1)$$",

@@ -8,5 +8,8 @@
     "stepBody": "",
     "answerType": "arithmetic",
     "variabilization": {},
-    "answerLatex": "$$2x^2-8x$$"
+    "answerLatex": "$$2x^2-8x$$",
+    "pacedSpeech": [
+        "The answer is 2 x squared, minus 8 x"
+    ]
 }

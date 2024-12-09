@@ -8,5 +8,8 @@
     "stepBody": "",
     "answerType": "arithmetic",
     "variabilization": {},
-    "answerLatex": "$$\\left(5h+3\\right) \\left(2h-3\\right)$$"
+    "answerLatex": "$$\\left(5h+3\\right) \\left(2h-3\\right)$$",
+    "pacedSpeech": [
+        "The answer is parentheses, 5 h plus 3 ; times, parentheses, 2 h minus 3"
+    ]
 }

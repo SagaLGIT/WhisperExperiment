@@ -8,6 +8,10 @@
     "stepBody": "",
     "answerType": "string",
     "variabilization": {},
+    "answerLatex": "$$(-4,2),(-4+1/5,2),x=-4-1/5$$",
+    "pacedSpeech": [
+        "The answer is negative 4 comma 2,  ;,  negative 4 plus 1 over 5 comma 2, ; x is equal to, negative 4 minus 1 over 5"
+    ],
     "choices": [
         "(-4,2),(-4+1/5,2),x=-4-1/5",
         "(-4,1),(-4+3/5,2),x=-4-1/5"

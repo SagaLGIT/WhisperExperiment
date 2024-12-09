@@ -8,5 +8,8 @@
     "stepBody": "",
     "answerType": "arithmetic",
     "variabilization": {},
-    "answerLatex": "$$(9d-1)(d-8)$$"
+    "answerLatex": "$$(9d-1)(d-8)$$",
+    "pacedSpeech": [
+        "The answer is parentheses, 9 d minus 1, ; times, parentheses d minus 8"
+    ]
 }

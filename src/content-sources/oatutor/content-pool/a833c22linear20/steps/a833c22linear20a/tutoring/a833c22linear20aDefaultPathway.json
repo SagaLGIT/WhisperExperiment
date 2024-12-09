@@ -4,20 +4,18 @@
         "type": "hint",
         "dependencies": [],
         "title": "Rewrite",
-        "text": "Let's try to rewrite this in equation form. We can make our variable $$x$$ where $$x$$ $$=$$ the number of days",
+        "text": "Let's try to rewrite this in equation form. We can make our variable $$x$$ where $$x =$$ the number of days",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Let's try to rewrite this in equation form. We can make our variable , x  where  x  , is equal to  the number of days",
+        "speech": "Let's try to rewrite this in equation form. We can make our variable , x  where  x  is equal to  the number of days",
         "math": [
             "$$x$$",
-            "$$x$$",
-            "$$=$$"
+            "$$x=$$"
         ],
         "pacedSpeech": [
             "Let's try to rewrite this in equation form. We can make our variable  , x ",
-            " where   x ",
-            "  , is equal to ",
+            " where   x is equal to ",
             " the number of days"
         ]
     },
@@ -28,18 +26,16 @@
             "a833c22linear20a-h1"
         ],
         "title": "Rewrite",
-        "text": "We can rewrite it to be f(x) $$=$$ $$60x$$ because that is how many texts are sent each day",
+        "text": "We can rewrite it to be $$f(x) = 60x$$ because that is how many texts are sent each day",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "We can rewrite it to be f(x) , is equal to,   60 x  because that is how many texts are sent each day",
+        "speech": "We can rewrite it to be f of x , is equal to,   60 x  because that is how many texts are sent each day",
         "math": [
-            "$$=$$",
-            "$$60x$$"
+            "$$f(x) = 60x$$"
         ],
         "pacedSpeech": [
-            "We can rewrite it to be f(x)  , is equal to, ",
-            "   60 x ",
+            "We can rewrite it to be f of x  , is equal to,  60 x ",
             " because that is how many texts are sent each day"
         ]
     },

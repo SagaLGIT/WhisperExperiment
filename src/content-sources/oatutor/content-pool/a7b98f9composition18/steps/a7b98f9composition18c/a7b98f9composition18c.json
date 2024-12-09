@@ -8,5 +8,8 @@
     "stepBody": "",
     "answerType": "arithmetic",
     "variabilization": {},
-    "answerLatex": "$$24x^3+48x^2$$"
+    "answerLatex": "$$24x^3+48x^2$$",
+    "pacedSpeech": [
+        "The answer is 24 x cubed, plus 48 x squared"
+    ]
 }

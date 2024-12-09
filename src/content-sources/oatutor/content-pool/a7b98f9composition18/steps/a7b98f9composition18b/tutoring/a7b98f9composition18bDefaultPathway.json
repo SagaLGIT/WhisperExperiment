@@ -8,12 +8,12 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Remember that f-g is the same as  times, parentheses f minus g,  times x . All we have to do is subtract the two functions.",
+        "speech": "Remember that f-g is the same as  times, parentheses f minus g,  of x . All we have to do is subtract the two functions.",
         "math": [
             "$$(f-g)(x)$$"
         ],
         "pacedSpeech": [
-            "Remember that f-g is the same as   times,  f minus g,  times x ",
+            "Remember that f-g is the same as   times,  f minus g,  of x ",
             ". All we have to do is subtract the two functions."
         ]
     },

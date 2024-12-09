@@ -8,6 +8,10 @@
     "stepBody": "",
     "answerType": "string",
     "variabilization": {},
+    "answerLatex": "B",
+    "pacedSpeech": [
+        "The answer is B"
+    ],
     "choices": [
         "A",
         "B"

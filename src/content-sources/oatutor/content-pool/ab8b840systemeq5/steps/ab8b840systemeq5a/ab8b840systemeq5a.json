@@ -9,6 +9,9 @@
     "answerType": "string",
     "variabilization": {},
     "answerLatex": "$$x=-8$$, $$y=6$$",
+    "pacedSpeech": [
+        "The answer is x equals negative 8, y equals 6"
+    ],
     "choices": [
         "$$x=4, y=3$$",
         "$$x=7$$, $$y=-10$$",

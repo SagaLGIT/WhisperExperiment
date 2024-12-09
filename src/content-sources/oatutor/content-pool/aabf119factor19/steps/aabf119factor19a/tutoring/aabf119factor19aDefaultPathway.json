@@ -32,18 +32,16 @@
             "aabf119factor19a-h1"
         ],
         "title": "Factor the expression.",
-        "text": "What is the factoring of $$10h^2$$ - $$15h$$?",
+        "text": "What is the factoring of $$10h^2 - 15h$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
-        "speech": "What is the factoring of , 10 h squared,  -  15 h ?",
+        "speech": "What is the factoring of , 10 h squared,  minus  15 h ?",
         "math": [
-            "$$10h^2$$",
-            "$$15h$$"
+            "$$10h^2 -15h$$"
         ],
         "pacedSpeech": [
-            "What is the factoring of  , 10 h squared, ",
-            " -   15 h"
+            "What is the factoring of  , 10 h squared,  minus  15 h "
         ]
     },
     {
@@ -58,17 +56,17 @@
             "aabf119factor19a-h2"
         ],
         "title": "Factor the expression.",
-        "text": "What is the factoring of $$6h$$ - 9?",
+        "text": "What is the factoring of $$6h- 9$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
-        "speech": "What is the factoring of  6 h  - 9?",
+        "speech": "What is the factoring of  6 h  minus 9?",
         "math": [
-            "$$6h$$"
+            "$$6h - 9$$"
         ],
         "pacedSpeech": [
-            "What is the factoring of   6 h ",
-            " - 9?"
+            "What is the factoring of   6 h minus 9"
+            
         ]
     },
     {

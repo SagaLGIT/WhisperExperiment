@@ -4,18 +4,18 @@
         "type": "hint",
         "dependencies": [],
         "title": "Addition",
-        "text": "Remember that $$f+g$$ is the same as $$\\left(f+g\\right) x$$. All we have to do is add the two functions.",
+        "text": "Remember that $$f+g$$ is the same as $$\\left(f+g\\right)(x)$$. All we have to do is add the two functions.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Remember that  f plus g  is the same as , parentheses f plus g,  times x . All we have to do is add the two functions.",
+        "speech": "Remember that  f plus g  is the same as , parentheses f plus g,  of x . All we have to do is add the two functions.",
         "math": [
             "$$f+g$$",
-            "$$\\left(f+g\\right) x$$"
+            "$$\\left(f+g\\right)(x)$$"
         ],
         "pacedSpeech": [
             "Remember that   f plus g ",
-            " is the same as  ,  f plus g,  times x ",
+            " is the same as  ,  f plus g,  of x ",
             ". All we have to do is add the two functions."
         ]
     },
@@ -49,13 +49,17 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Now we need to multiply the fractions by a factor of  1  to get them to have the common denominator. (1/(x-4))*((6-x)(6-x))=(6-x)/((x-4)(6-x), and (1/(6-x))*((x-4)(x-4))=(x-4)/((x-4)(6-x). Now, we need to add these new fractions together.",
+        "speech": "Now we need to multiply the fractions by a factor of  1  to get them to have the common denominator. This expression, and this epression. Now, we need to add these new fractions together.",
         "math": [
-            "$$1$$"
+            "$$1$$",
+            "$$(1/(x-4))*((6-x)(6-x))=(6-x)/((x-4)(6-x)$$",
+            "$$(1/(6-x))*((x-4)(x-4))=(x-4)/((x-4)(6-x)$$"
+
         ],
         "pacedSpeech": [
             "Now we need to multiply the fractions by a factor of   1 ",
-            " to get them to have the common denominator. (1/(x-4))*((6-x)(6-x))=(6-x)/((x-4)(6-x), and (1/(6-x))*((x-4)(x-4))=(x-4)/((x-4)(6-x). Now, we need to add these new fractions together."
+            " to get them to have the common denominator. This expression, and this epression", 
+            ", and this expression. Now, we need to add these new fractions together."
         ]
     },
     {

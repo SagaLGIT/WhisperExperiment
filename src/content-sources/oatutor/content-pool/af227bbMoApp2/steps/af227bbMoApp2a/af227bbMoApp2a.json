@@ -9,6 +9,9 @@
     "answerType": "string",
     "variabilization": {},
     "answerLatex": "$$25$$ $$11$$",
+    "pacedSpeech": [
+        "The answer is 25, 11"
+    ],
     "choices": [
         "$$19$$ $$8$$",
         "$$21$$ $$9$$",

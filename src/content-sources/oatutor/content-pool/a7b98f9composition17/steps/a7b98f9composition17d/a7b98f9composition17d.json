@@ -8,5 +8,8 @@
     "stepBody": "",
     "answerType": "arithmetic",
     "variabilization": {},
-    "answerLatex": "$$\\frac{\\left(-3x^2+x\\right)}{5}$$"
+    "answerLatex": "$$\\frac{\\left(-3x^2+x\\right)}{5}$$",
+    "pacedSpeech": [
+        "The answer is fraction, parentheses, negative 3 x squared, plus x;  over 5"
+    ]
 }

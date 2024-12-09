@@ -4,22 +4,26 @@
         "type": "hint",
         "dependencies": [],
         "title": "Defining Local Maximum",
-        "text": "A function f has a local maximum at $$x=b$$ if there exists an interval (a,c) with $$a<b<c$$ such that, for any $$x$$ in the interval (a,c), $$f(x) \\leq f(b)$$. In other words, a local minimum is a high point on the graph.",
+        "text": "A function f has a local maximum at $$x=b$$ if there exists an interval $$(a,c)$$ with $$a<b<c$$ such that, for any $$x$$ in the interval $$(a,c)$$, $$f(x) \\leq f(b)$$. In other words, a local minimum is a high point on the graph.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "A function f has a local maximum at  x is equal to b  if there exists an interval (a,c) with  a, is less than b is less than c  such that, for any  x  in the interval (a,c),  f of x is less than or equal to, f of b . In other words, a local minimum is a high point on the graph.",
+        "speech": "A function f has a local maximum at  x is equal to b  if there exists an interval parentheses a comma c with  a, is less than b is less than c  such that, for any  x  in the interval parentheses a comma c,  f of x is less than or equal to, f of b . In other words, a local minimum is a high point on the graph.",
         "math": [
             "$$x=b$$",
+            "$$(a,c)$$",
             "$$a<b<c$$",
             "$$x$$",
+            "$$(a,c)$$",
             "$$f(x) \\leq f(b)$$"
         ],
         "pacedSpeech": [
             "A function f has a local maximum at   x is equal to b ",
-            " if there exists an interval (a,c) with   a, is less than b is less than c ",
+            " if there exists an interval parentheses a comma c",
+             "with   a, is less than b is less than c ",
             " such that, for any   x ",
-            " in the interval (a,c),   f of x is less than or equal to, f of b ",
+            " in the interval parentheses a comma c",
+            "   f of x is less than or equal to, f of b ",
             ". In other words, a local minimum is a high point on the graph."
         ]
     },

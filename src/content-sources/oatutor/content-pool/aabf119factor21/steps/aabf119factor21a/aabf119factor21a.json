@@ -9,6 +9,9 @@
     "answerType": "string",
     "variabilization": {},
     "answerLatex": "$$\\left(12t+13\\right) \\left(t-1\\right)$$",
+    "pacedSpeech": [
+        "The answer is parentheses, 12 t plus 13,  times, parentheses t minus 1"
+    ],
     "choices": [
         "$$(12t-13)(t-1)$$",
         "$$\\left(12t+13\\right) \\left(t+1\\right)$$",

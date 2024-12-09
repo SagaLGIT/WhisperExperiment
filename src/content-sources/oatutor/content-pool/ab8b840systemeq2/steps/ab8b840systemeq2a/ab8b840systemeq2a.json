@@ -8,6 +8,7 @@
     "stepBody": "",
     "answerType": "string",
     "variabilization": {},
+    "answerLatex": "No solution",
     "choices": [
         "$$x=10, y=4$$",
         "$$x=17, y=15$$",

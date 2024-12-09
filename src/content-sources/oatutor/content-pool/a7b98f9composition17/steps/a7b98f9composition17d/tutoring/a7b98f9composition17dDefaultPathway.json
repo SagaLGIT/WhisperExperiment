@@ -4,18 +4,18 @@
         "type": "hint",
         "dependencies": [],
         "title": "Division",
-        "text": "Remember that $$\\frac{f}{g}$$ is the same as $$\\frac{f}{g} x$$. All we have to do is divide the two functions.",
+        "text": "Remember that $$\\frac{f}{g}$$ is the same as $$\\frac{f}{g}(x)$$. All we have to do is divide the two functions.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Remember that , f over g,  is the same as  f over g, x . All we have to do is divide the two functions.",
+        "speech": "Remember that , f over g,  is the same as  f over g, of x . All we have to do is divide the two functions.",
         "math": [
             "$$\\frac{f}{g}$$",
-            "$$\\frac{f}{g} x$$"
+            "$$\\frac{f}{g}(x)$$"
         ],
         "pacedSpeech": [
             "Remember that  , f over g, ",
-            " is the same as   f over g, x ",
+            " is the same as   f over g, of x ",
             ". All we have to do is divide the two functions."
         ]
     },
