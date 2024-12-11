@@ -27,8 +27,6 @@ import { styled } from "@material-ui/core/styles";
 import axios from "axios";
 import HintVoiceBoard from "./HintVoiceBoard.js";
 
-// import io from "socket.io-client";
-// const socket = io("http://localhost:3000");
 
 const Item = styled(Paper)(({ theme, show_boarder }) => ({
     backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -38,7 +36,7 @@ const Item = styled(Paper)(({ theme, show_boarder }) => ({
     color: theme.palette.text.primary,
     border: show_boarder === "true" ? "1px solid black" : "none",
 }));
-// HELLO
+
 
 class HintSystem extends React.Component {
     static contextType = ThemeContext;
@@ -61,6 +59,9 @@ class HintSystem extends React.Component {
             if (!this.props.hints[i].audios) {
                 console.log("Pre cache ongoing for", i);
                 this.fetchAudioData(this.props.hints[i]);
+                // also get for subhints - prefetch as well
+
+
             }
         }
 
@@ -223,6 +224,7 @@ class HintSystem extends React.Component {
 
     // Sharon added methods
     fetchAudioData = async (hint) => {
+        // main fetching (other is backup) - is audio available? check
         // console.log("hint pacedSpeech: ", hint.pacedSpeech);
         try {
             const response = await axios.post(
@@ -266,11 +268,18 @@ class HintSystem extends React.Component {
                         (prevState) => ({
                             hintIndex: prevState.hintIndex + 1,
                         }),
-                        () => {
+                        () => { 
                             this.playAudioForSegment(
                                 segmentIndex + 1,
                                 audioData
                             ); // Play next segment
+
+                            // setTimeout(() => {
+                            //     this.playAudioForSegment(
+                            //         segmentIndex + 1,
+                            //         audioData
+                            //     ); // Play next segment after a short pause
+                            // }, 700); // 1000 milliseconds = 1 second pause
                         }
                     );
                 } else {
@@ -597,12 +606,14 @@ class HintSystem extends React.Component {
                         </AccordionDetails>
                         {this.props.agentMode && (
                             <AccordionActions>
+                                
                                 {this.state.agentMode ? (
                                     <>
                                         <Button
                                             onClick={() =>
                                                 this.reloadSpeech(hint)
                                             }
+                                            className={classes.button}
                                         >
                                             <img
                                                 src={`${process.env.PUBLIC_URL}/reload_icon.svg`}
@@ -616,6 +627,7 @@ class HintSystem extends React.Component {
                                             onClick={() => {
                                                 this.togglePlayPause(hint);
                                             }}
+                                            className={classes.button}
                                         >
                                             {this.state.playing ? (
                                                 <img
@@ -637,8 +649,8 @@ class HintSystem extends React.Component {
                                 ) : (
                                     " "
                                 )}
-
                                 <Button
+                                    className={classes.button}
                                     onClick={() => this.toggleWhiteboard(hint)}
                                 >
                                     {this.state.agentMode ? "TEXT" : "AGENT"}
@@ -659,6 +671,15 @@ const styles = (theme) => ({
     heading: {
         fontSize: theme.typography.pxToRem(15),
         fontWeight: theme.typography.fontWeightRegular,
+    },
+    button: {
+        backgroundColor: '#8c94ff',
+        // marginLeft: 'auto',
+        // marginRight: 'auto',
+        paddingLeft: 10, // 10 before
+        paddingRight: 10,
+        width: "10%",
+        height: "35px"
     },
 });
 
