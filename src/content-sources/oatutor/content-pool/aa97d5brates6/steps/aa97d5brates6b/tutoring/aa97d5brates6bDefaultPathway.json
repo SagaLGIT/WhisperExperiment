@@ -52,7 +52,15 @@
                 "text": "The graph attains a local minimum at $$x=-1$$ because it is the lowest point in an open interval around $$x=-1$$.",
                 "variabilization": {},
                 "oer": "https://OATutor.io <OATutor>",
-                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+                "math": [
+                    "$$x=-1$$",
+                    "$$x=-1$$"
+                ],
+                "pacedSpeech": [
+                    "The graph attains a local maximum at x is equal to negative 1",
+                    "because it is the highest point in an open interval around x is equal to negative 1."
+                ]
             }
         ],
         "speech": "At which  x  does the graph attain a local minimum?",

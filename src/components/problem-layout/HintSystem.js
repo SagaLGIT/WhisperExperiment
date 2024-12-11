@@ -673,7 +673,7 @@ const styles = (theme) => ({
         fontWeight: theme.typography.fontWeightRegular,
     },
     button: {
-        backgroundColor: '#8c94ff',
+        backgroundColor: '#D1D4FF',
         // marginLeft: 'auto',
         // marginRight: 'auto',
         paddingLeft: 10, // 10 before

@@ -45,7 +45,19 @@
                 "text": "$$5\\left(-3x^2+x\\right)$$ is the same as 5(-3x**2+x). After distributing the $$5$$, we are left with $$-15x^2+5x$$.",
                 "variabilization": {},
                 "oer": "https://OATutor.io <OATutor>",
-                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>"
+                "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+                "math": [
+                    "$$5\\left(-3x^2+x\\right)$$",
+                    "$$5*-3x^2 + 5*x$$",
+                    "$$5$$",
+                    "$$-15x^2+5x$$"
+                ],
+                "pacedSpeech": [
+                    "5 times; parentheses negative 3 x squared, plus x",
+                    " is the same as 5 times negative 3 x squared; plus 5 times x",
+                    "After distributing the 5",
+                    "we are left with negative 15 x squared, plus 5 x"
+                ]
             }
         ],
         "speech": "What is  5 times parentheses, negative 3 x squared, plus x  ?",
