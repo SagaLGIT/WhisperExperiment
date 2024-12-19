@@ -77,7 +77,7 @@ class HintSystem extends React.Component {
             hintAnswer: "",
             showSubHints: new Array(this.props.hints.length).fill(false),
             subHintsFinished: subHintsFinished,
-            agentMode: this.props.agentMode, // showing text or agent whiteboard
+            agentActive: false, // showing text or agent whiteboard
             playing: false, // speaking or not
             hintIndex: 0, // index of hint to highlight
         };
@@ -125,8 +125,8 @@ class HintSystem extends React.Component {
             }
             this.setState({ latestStep: i });
 
-            this.setState({ agentMode: this.props.agentMode }, () => {
-                if (this.state.agentMode) {
+            this.setState({ agentActive: this.state.agentActive }, () => { // TODO: make global button for pref?
+                if (this.state.agentActive) {
                     // console.log("print hint:", this.props.hints[i]);
                     this.playAgent(this.props.hints[i]);
                     this.context.firebase.log(
@@ -273,13 +273,6 @@ class HintSystem extends React.Component {
                                 segmentIndex + 1,
                                 audioData
                             ); // Play next segment
-
-                            // setTimeout(() => {
-                            //     this.playAudioForSegment(
-                            //         segmentIndex + 1,
-                            //         audioData
-                            //     ); // Play next segment after a short pause
-                            // }, 700); // 1000 milliseconds = 1 second pause
                         }
                     );
                 } else {
@@ -312,7 +305,7 @@ class HintSystem extends React.Component {
             }
         });
 
-        return this.state.agentMode ? (
+        return this.state.agentActive ? (
             <HintVoiceBoard
                 hint={hint}
                 hintIndex={this.state.hintIndex}
@@ -338,7 +331,7 @@ class HintSystem extends React.Component {
     };
 
     playAgent = (hint) => {
-        if (this.state.agentMode) {
+        if (this.state.agentActive) {
             if (hint.pacedSpeech && hint.audios) {
                 this.setState({ hintIndex: 0 });
                 this.setState(() => ({ playing: true }));
@@ -374,15 +367,13 @@ class HintSystem extends React.Component {
     };
 
     toggleWhiteboard = (hint) => {
-        // console.log("hint", hint, hint.agentMode);
-        // hint.agentMode = !hint.agentMode;
         if (this.state.playing && this.audioRef) {
             // pause
             this.audioRef.pause();
         }
         this.setState(
             (prevState) => ({
-                agentMode: !prevState.agentMode,
+                agentActive: !prevState.agentActive,
             }),
             () => {
                 this.playAgent(hint);
@@ -393,7 +384,7 @@ class HintSystem extends React.Component {
                     null,
                     null,
                     this.state.subHintsFinished,
-                    this.state.agentMode == true
+                    this.state.agentActive == true
                         ? "Switch to agent"
                         : "Switch to text",
                     chooseVariables(this.props.stepVars, this.props.seed),
@@ -425,7 +416,7 @@ class HintSystem extends React.Component {
         } else {
             // play
             if (this.state.hintIndex == 0) {
-                if (this.state.agentMode) {
+                if (this.state.agentActive) {
                     if (hint.pacedSpeech && hint.audios) {
                         this.playAudioForSegment(0, hint.audios);
                     }
@@ -606,8 +597,7 @@ class HintSystem extends React.Component {
                         </AccordionDetails>
                         {this.props.agentMode && (
                             <AccordionActions>
-                                
-                                {this.state.agentMode ? (
+                                {this.state.agentActive ? (
                                     <>
                                         <Button
                                             onClick={() =>
@@ -653,7 +643,7 @@ class HintSystem extends React.Component {
                                     className={classes.button}
                                     onClick={() => this.toggleWhiteboard(hint)}
                                 >
-                                    {this.state.agentMode ? "TEXT" : "AGENT"}
+                                    {this.state.agentActive ? "TEXT" : "AGENT"}
                                 </Button>
                             </AccordionActions>
                         )}
