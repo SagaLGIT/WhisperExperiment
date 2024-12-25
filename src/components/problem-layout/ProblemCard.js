@@ -504,7 +504,7 @@ class ProblemCard extends React.Component {
                         )}
                         <hr />
                     </h2>
-
+                    // Put Toggle here
                     <div className={classes.stepBody}>
                         {renderText(
                             this.step.stepBody,

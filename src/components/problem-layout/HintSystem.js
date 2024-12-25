@@ -23,6 +23,9 @@ import Grid from "@material-ui/core/Grid";
 
 import Paper from "@material-ui/core/Paper";
 import { styled } from "@material-ui/core/styles";
+import { createTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles';
+
+import ButtonGroup from '@material-ui/core/ButtonGroup';
 
 import axios from "axios";
 import HintVoiceBoard from "./HintVoiceBoard.js";
@@ -366,6 +369,14 @@ class HintSystem extends React.Component {
         // will stop the speech
     };
 
+    toggleAgentActive = (newState, hint) => {
+        
+        // if state is changed:
+        if(this.state.agentActive !== newState){
+            this.toggleWhiteboard(hint)
+        };
+    };
+
     toggleWhiteboard = (hint) => {
         if (this.state.playing && this.audioRef) {
             // pause
@@ -639,12 +650,16 @@ class HintSystem extends React.Component {
                                 ) : (
                                     " "
                                 )}
-                                <Button
-                                    className={classes.button}
-                                    onClick={() => this.toggleWhiteboard(hint)}
-                                >
-                                    {this.state.agentActive ? "TEXT" : "AGENT"}
-                                </Button>
+                                <ButtonGroup color="primary" aria-label="outlined primary button group">
+                                    <Button
+                                    style={{ backgroundColor: this.state.agentActive ? 'initial' : '#D1D4FF'}}
+                                    onClick={() => this.toggleAgentActive(false, hint)}
+                                    >TEXT</Button>
+                                    <Button
+                                    style={{ backgroundColor: this.state.agentActive ?  '#D1D4FF': 'initial'}}
+                                    onClick={() => this.toggleAgentActive(true, hint)}
+                                    >AGENT</Button>
+                                </ButtonGroup>
                             </AccordionActions>
                         )}
                     </Accordion>
@@ -653,6 +668,7 @@ class HintSystem extends React.Component {
         );
     }
 }
+
 
 const styles = (theme) => ({
     root: {
@@ -664,13 +680,12 @@ const styles = (theme) => ({
     },
     button: {
         backgroundColor: '#D1D4FF',
-        // marginLeft: 'auto',
-        // marginRight: 'auto',
         paddingLeft: 10, // 10 before
         paddingRight: 10,
         width: "10%",
         height: "35px"
     },
+    
 });
 
 export default withStyles(styles)(withTranslation(HintSystem));
