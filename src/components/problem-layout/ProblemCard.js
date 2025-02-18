@@ -144,6 +144,7 @@ class ProblemCard extends React.Component {
             dynamicHint: "",
             bioInfo: "",
             enableHintGeneration: true,
+            // agentActive: false,
         };
     }
 
@@ -477,6 +478,10 @@ class ProblemCard extends React.Component {
             });
     };
 
+// agentActive definded state in this component
+// sent as prop to hintSystem
+// 
+
     render() {
         const { translate } = this.props;
         const { classes, problemID, problemVars, seed } = this.props;
@@ -503,8 +508,7 @@ class ProblemCard extends React.Component {
                             this.context
                         )}
                         <hr />
-                    </h2>
-                    // Put Toggle here
+                    </h2> 
                     <div className={classes.stepBody}>
                         {renderText(
                             this.step.stepBody,

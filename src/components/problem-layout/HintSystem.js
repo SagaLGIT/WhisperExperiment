@@ -73,6 +73,8 @@ class HintSystem extends React.Component {
         this.isIncorrect = props.isIncorrect;
         this.giveHintOnIncorrect = props.giveHintOnIncorrect;
         this.audioRef = null;
+        this.agentActive = props.agentActive; // get from ProblemCard instead
+
 
         this.state = {
             latestStep: 0,

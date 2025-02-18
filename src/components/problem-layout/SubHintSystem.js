@@ -54,6 +54,7 @@ class SubHintSystem extends React.Component {
         const { currentExpanded } = this.state;
         const { debug, use_expanded_view } = this.context;
 
+         // TODO: in AccordionDetails use renderWhiteboard, if agentMode it will show
         return (
             <div className={classes.root}>
                 {this.props.hints.map((hint, i) => {
@@ -70,7 +71,7 @@ class SubHintSystem extends React.Component {
                                 <Typography className={classes.heading}>
                                     Hint {i + 1}: {renderText(hint.title, problemID,
                                     chooseVariables(Object.assign({}, hintVars, hint.variabilization), seed), this.context)} </Typography>
-                            </AccordionSummary>
+                            </AccordionSummary> 
                             <AccordionDetails>
                                 <Typography component={'span'} style={{ width: "100%" }}>
                                     {renderText(hint.text, problemID, chooseVariables(Object.assign({}, hintVars, hint.variabilization), seed), this.context)}
